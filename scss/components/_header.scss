@@ -1,0 +1,82 @@
+//Belinda font
+@font-face {
+  font-family: myBelinda;
+  src: url('../fonts/belinda.otf');
+}
+
+.header {
+  background: url('../img/Major-screen.png') center/cover no-repeat;
+  text-align: center;
+  color: white;
+
+  &__menu {
+    margin: 5.7rem 0 5.3rem;
+
+    &-item {
+      display: inline-block;
+      margin: 0 3rem 0 0;
+    }
+  }
+
+  &__subheading {
+    font: normal normal 15pt 'PTSans-Bold' $basic-font-stack;
+    max-width: 615px;
+    margin: 0 auto 62px;
+    line-height: 24px;
+    letter-spacing: .01em;
+  }
+
+  &__status {
+    color: white;
+    margin: -20px 0 28px 0;
+    font-size: 53pt;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  &__name {
+    color: white;
+    margin: 120px 0 0 0;
+    font-size: 52pt;
+    font-family: myBelinda;
+  }
+
+  &__button {
+    background: #50c3af;
+    border-radius: 30px;
+    padding: 20px 50px;
+    margin: 10px 0 130px 0;
+  }
+
+  &__link {
+    color: white;
+    font: normal normal 13pt 'OpenSans-Semibold', $basic-font-stack;
+    text-decoration: none;
+  }
+
+  @media only screen and (max-width: $small-break-point) {
+    padding: 0 $medium-padding;
+
+    &__subheading {
+      margin-bottom: 60px;
+    }
+
+    &__menu {
+      margin: 2rem auto;
+
+      &-item {
+        display: block;
+        margin: {
+          bottom: 2rem;
+          right: 0;
+        }
+      }
+    }
+  }
+
+  @media only screen and (max-width: $xsmall-break-point) {
+
+    &__subheading {
+      margin-bottom: 40px;
+    }
+  }
+}
