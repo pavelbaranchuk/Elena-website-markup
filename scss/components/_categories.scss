@@ -1,5 +1,5 @@
 .categories {
-  background: $color-2;
+  background: $color-1;
   
   &__content {
     display: flex;
@@ -28,7 +28,7 @@
       bottom: -2rem;
       height: 2px;
       opacity: 0.06;
-      background: black;
+      background: $color-3;
     }
   }
 
@@ -45,7 +45,7 @@
 
   &__text {
     margin-bottom: 80px;
-    color: #787b80;
+    color: $color-6;
   }
 }
 

@@ -1,8 +1,7 @@
-.features {
+.feature {
     &__item {
       display: inline-block;
-      text-align: center;
-      max-width: 250px;
+      max-width: 190px;
     }
 
     &__content {
@@ -12,20 +11,25 @@
       }
 
     &__button {
-      background: #50c3af;
+      background: $color-5;
       border-radius: 20px;
       padding: 10px 10px;
       margin: 10px 0 100px 0;
     }
 
     &__link {
-        color: #50c3af;
+        color: $color-5;
+        display: inline-block;
         text-decoration-line: none;
+        margin-bottom: 40px;
+        &:hover {
+          text-decoration: underline;
+        }
     }
   
     &__heading {
       position: relative;
-      color: #384048;
+      color: $color-4;
       font-size: 12pt;
       text-transform: uppercase;
       margin: 40px 0 50px;
@@ -33,12 +37,12 @@
       &:after {
         content: "";
         position: absolute;
-        left: 35px;
-        right: 35px;
+        left: 0;
+        right: 0;
         bottom: -2rem;
         height: 2px;
         opacity: 0.06;
-        background: black;
+        background: $color-3;
       }
     }
   
@@ -54,8 +58,8 @@
     }
   
     &__text {
-      margin-bottom: 20px;
-      color: #787b80;
+        margin-bottom: 20px;
+        color: $color-6;
     }
   }
   

@@ -1,5 +1,5 @@
-.action {
-    background: $color-2;
+.actions {
+    background: $color-1;
 
     &__item {
       display: inline-block;
@@ -19,15 +19,15 @@
       }
 
     &__button {
-      background: #50c3af;
+      background: $color-5;
       border-radius: 20px;
       padding: 10px 10px;
-      margin: 10px 0 100px 0;
+      margin: 10px 0 60px 0;
     }
   
     &__heading {
       position: relative;
-      color: #384048;
+      color: $color-4;
       font-size: 12pt;
       text-transform: uppercase;
       margin: 40px 0 50px;
@@ -57,7 +57,7 @@
   
     &__text {
       margin-bottom: 20px;
-      color: #787b80;
+      color: $color-6;
     }
 
     &__button-text {

@@ -1,5 +1,5 @@
 .supported {
-    background: $color-2;
+    background: $color-1;
 
     &__item {
       display: inline-block;
@@ -23,13 +23,13 @@
        color: white;
        border-radius: 20px;
        padding: 10px 10px;
-       margin: 10px 0 100px 0;
-       background: #d2d5da;
+       margin: 10px 0 60px 0;
+       background: $color-7;
     }
   
     &__heading {
       position: relative;
-      color: #384048;
+      color: $color-4;
       font-size: 12pt;
       text-transform: uppercase;
       margin: 40px 0 50px;
@@ -55,7 +55,7 @@
 
     &__text {
         margin-bottom: 20px;
-        color: #787b80;
+        color: $color-6;
       }
   
     &__article-heading {
