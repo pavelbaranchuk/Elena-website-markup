@@ -11,10 +11,10 @@
       }
 
     &__button {
-      background: #50c3af;
+      background: $color-5;
       border-radius: 20px;
       padding: 10px 10px;
-      margin: 10px 0 100px 0;
+      margin: 10px 0 60px 0;
     }
   
     &__heading {
@@ -50,6 +50,7 @@
     &__text {
       margin-bottom: 20px;
       color: #787b80;
+      font-family: $basic-font-stack;
     }
 
     &__button-text {

@@ -1,13 +1,7 @@
-//Belinda font
-@font-face {
-  font-family: myBelinda;
-  src: url('../fonts/belinda.otf');
-}
-
 .header {
   background: url('../img/Major-screen.png') center/cover no-repeat;
   text-align: center;
-  color: white;
+  color: $color-2;
 
   &__menu {
     margin: 5.7rem 0 5.3rem;
@@ -19,7 +13,7 @@
   }
 
   &__subheading {
-    font: normal normal 15pt 'PTSans-Bold' $basic-font-stack;
+    font: normal normal 15pt $heading-font-stack;
     max-width: 615px;
     margin: 0 auto 62px;
     line-height: 24px;
@@ -27,28 +21,31 @@
   }
 
   &__status {
-    color: white;
+    color: $color-2;
     margin: -20px 0 28px 0;
     font-size: 53pt;
     font-family: 'Ubuntu', sans-serif;
   }
 
   &__name {
-    color: white;
+    color: $color-2;
     margin: 120px 0 0 0;
     font-size: 52pt;
     font-family: myBelinda;
   }
 
   &__button {
-    background: #50c3af;
+    background: $color-5;
     border-radius: 30px;
     padding: 20px 50px;
     margin: 10px 0 130px 0;
+    border: 0 none;
+    color: $color-2;
+    font-family: $heading-font-stack;
   }
 
   &__link {
-    color: white;
+    color: $color-2;
     font: normal normal 13pt 'OpenSans-Semibold', $basic-font-stack;
     text-decoration: none;
   }

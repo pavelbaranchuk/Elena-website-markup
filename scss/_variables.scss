@@ -14,8 +14,8 @@ $medium-weight: 500;
 $black-weight: 900;
 $light-weight: 300;
 
-$basic-font-stack: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-$heading-font-stack: 'Roboto', $basic-font-stack;
+$basic-font-stack: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
+$heading-font-stack: PTSans-Bold, AdobeInvisFont, MyriadPro-Regular, $basic-font-stack;
 
 $medium-break-point: 1024px;
 $small-break-point: 768px;

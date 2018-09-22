@@ -12,15 +12,16 @@
     display: inline-block;
     max-width: 380px;
     font-family: PTSans-Bold, AdobeInvisFont, MyriadPro-Regular;
-    margin-top: -60px;
   }
 
   &__heading {
     position: relative;
-    color: $color-4;
+    color: #40474e;
     font-size: 12pt;
     text-transform: uppercase;
-    margin: 40px 0 50px;
+    margin: 60px 0 65px;
+    font-family: $heading-font-stack;
+    font-size: 15pt;
 
     &:after {
       content: "";
@@ -47,6 +48,7 @@
   &__image {
     -webkit-clip-path: inset(123px 211px 2px 22px);
     clip-path: inset(123px 211px 2px 22px);  
+    margin-top: -120px;
   }
 
   &__image-container {
