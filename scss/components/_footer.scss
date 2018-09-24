@@ -13,6 +13,18 @@
     opacity: 0.5;
   }
 
+  &__link {
+    opacity: 0.5;
+    text-decoration-line: none;
+    &:hover {
+      text-decoration: underline;
+      color: darken($color-6, 20%);
+    }
+    &:visited {
+      color: darken($color-6, 20%);
+    }
+  }
+
   &__item {
     margin: 20px;
     font-family: $basic-font-stack;
