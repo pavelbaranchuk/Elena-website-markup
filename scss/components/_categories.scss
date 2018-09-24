@@ -16,7 +16,7 @@
   &__heading {
     position: relative;
     color: #384048;
-    font-size: 12pt;
+    font-size: 15px;
     text-transform: uppercase;
     margin: 40px 0 50px;
 
@@ -25,7 +25,7 @@
       position: absolute;
       left: 35px;
       right: 35px;
-      bottom: -2rem;
+      bottom: -25px;
       height: 2px;
       opacity: 0.06;
       background: $color-3;
@@ -35,7 +35,8 @@
   &__image {
     align-content: center;
     text-align: center;
-    min-height: 45px;
+    height: 45px;
+    width: 50px;
     margin-top: 80px;
   }
 
@@ -46,6 +47,26 @@
   &__text {
     margin-bottom: 80px;
     color: $color-6;
+  }
+
+  @include to640 {
+    &__heading {
+      font-size: 14px;
+      margin: 30px 0 50px;
+    }
+
+    &__image {
+      align-content: center;
+      text-align: center;
+      height: 35px;
+      width: 41px;
+      margin-top: 40px;
+    }
+
+    &__text {
+      margin-bottom: 40px;
+      padding: 0 20px 0 20px;
+    }
   }
 }
 

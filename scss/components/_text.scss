@@ -4,7 +4,11 @@
   line-height: 24px;
   letter-spacing: .01em;
 
-  @media only screen and (max-width: $small-break-point) {
+  @media only screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @include to640 {
     font-size: 12px;
   }
 }

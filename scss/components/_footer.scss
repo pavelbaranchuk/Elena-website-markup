@@ -26,4 +26,12 @@
     color: $color-6;
   }
 
+  @include to640 {
+    
+  }
+  @include to480 {
+    &__item {
+      font-size: 12px;
+    }
+  }
 }

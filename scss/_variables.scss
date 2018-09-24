@@ -1,8 +1,8 @@
-$container-width: 800px;
+$container-width: 1024px;
 $medium-padding: 40px;
 
 $color-1: #eeeeef;
-$color-2: white;
+$color-2: #ffffff;
 $color-3: black;
 $color-4: #384048;
 $color-5: #50c3af;
@@ -17,6 +17,13 @@ $light-weight: 300;
 $basic-font-stack: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
 $heading-font-stack: PTSans-Bold, AdobeInvisFont, MyriadPro-Regular, $basic-font-stack;
 
-$medium-break-point: 1024px;
-$small-break-point: 768px;
-$xsmall-break-point: 480px;
+@mixin to640 {
+    @media only screen and (max-width: 768px + 17px) {
+      @content;
+    }
+  }
+  @mixin to480 {
+    @media only screen and (max-width: 480px + 17px) {
+      @content;
+    }
+  }

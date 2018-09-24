@@ -1,14 +1,14 @@
 .templates {
     &__item {
       display: inline-block;
-      max-width: 250px;
+      max-width: 267px;
     }
 
     &__content {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
 
     &__button {
       background: $color-5;
@@ -20,7 +20,7 @@
     &__heading {
       position: relative;
       color: #384048;
-      font-size: 12pt;
+      font-size: 15px;
       text-transform: uppercase;
       margin: 40px 0 50px;
   
@@ -29,7 +29,7 @@
         position: absolute;
         left: 0px;
         right: 0px;
-        bottom: -2rem;
+        bottom: -25px;
         height: 2px;
         opacity: 0.06;
         background: linear-gradient(to right, black, #b8b8b8);
@@ -43,10 +43,6 @@
       margin-top: 80px;
     }
   
-    &__article-heading {
-      align-items: center;
-    }
-  
     &__text {
       margin-bottom: 20px;
       color: #787b80;
@@ -55,6 +51,63 @@
 
     &__button-text {
       font-size: 14px;
+    }
+
+    @include to640 {
+      &__image {
+        max-width: 220px;
+        margin-top: 40px;
+      }
+
+      &__content {
+        text-align: center;
+      }
+
+      &__heading {
+        font-size: 13px;
+
+        &:after {
+          left: 20px;
+          right: 20px;
+        }
+      }
+
+      &__text {
+        padding: 0 10px 0 10px;
+      }
+
+      &__button {
+        margin: 0 0 40px 0;
+      }
+    }
+
+    @include to480 {
+
+      &__content {
+        flex-direction: column;
+      }
+
+      &__image {
+        margin-top: 0;
+        max-width: 267px;
+      }
+
+      &__content {
+        margin-top: 40px;
+      }
+
+      &__heading {
+        font-size: 15px;
+
+        &:after {
+          left: 0;
+          right: 0;
+        }
+      }
+
+      &__text {
+        padding: 0;
+      }
     }
   }
   

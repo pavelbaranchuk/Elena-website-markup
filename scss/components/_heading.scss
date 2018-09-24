@@ -3,26 +3,8 @@
   margin: 10px 0;
 
   &_1 {
-    font: normal $light-weight  56px $heading-font-stack;
-    letter-spacing: -.01em;
-    line-height: 48px;
-  }
-
-  &_2 {
     font: normal normal 34px $heading-font-stack;
     letter-spacing: 0;
     line-height: 0
-  }
-
-  &_3 {
-    font: normal $medium-weight 20px $heading-font-stack;
-    line-height: 24px;
-    letter-spacing: .01em;
-  }
-
-  &_4 {
-    font: normal $medium-weight 16px $heading-font-stack;
-    line-height: 24px;
-    letter-spacing: .01em;
   }
 }

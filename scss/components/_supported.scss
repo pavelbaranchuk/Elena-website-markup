@@ -11,6 +11,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 0 40px 0 40px;
       }
 
     &__button {
@@ -35,7 +36,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -2rem;
+        bottom: -25px;
         height: 2px;
         opacity: 0.06;
         background: linear-gradient(to right, black, #b8b8b8);
@@ -61,7 +62,29 @@
   
     &__button-text {
         font-size: 14px;
+    }
+
+    @include to640 {
+      &__content {
+        max-width: 460px;
+        padding: 0;
       }
+
+      &__button {
+        margin: 5px 0 40px 0;
+      }
+      
+    }
+    @include to480 {
+      &__content {
+        max-width: 300px;
+        text-align: center;
+      }
+
+      &__text {
+        text-align: left;
+      }
+    }
   }
   
   

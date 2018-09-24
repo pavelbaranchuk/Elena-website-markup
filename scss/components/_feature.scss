@@ -8,7 +8,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-      }
+        padding: 0 40px 0 40px;
+    }
 
     &__button {
       background: $color-5;
@@ -30,7 +31,7 @@
     &__heading {
       position: relative;
       color: $color-4;
-      font-size: 12pt;
+      font-size: 16px;
       text-transform: uppercase;
       margin: 40px 0 50px;
   
@@ -39,7 +40,7 @@
         position: absolute;
         left: 0;
         right: 0;
-        bottom: -2rem;
+        bottom: -25px;
         height: 2px;
         opacity: 0.06;
         background: $color-3;
@@ -60,6 +61,42 @@
     &__text {
         margin-bottom: 20px;
         color: $color-6;
+    }
+
+    @include to640 {
+      &__heading {
+        font-size: 12px;
+      }
+
+      &__image {        
+        height: 120px;
+        width: 150px;
+        margin-top: 40px;
+      }
+
+      &__cotent {
+        padding: 0;
+      }
+    }
+    @include to480 {
+      &__content {
+        flex-direction: column;
+        margin-top: 40px;
+      }
+
+      &__item {
+        max-width: 300px;
+      }
+
+      &__image {        
+        height: 200px;
+        width: 300px;
+        margin-top: 0;
+      }
+
+      &__heading {
+        font-size: 16px;
+      }
     }
   }
   

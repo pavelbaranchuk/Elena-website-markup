@@ -16,7 +16,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-      }
+    }
 
     &__button {
       background: $color-5;
@@ -37,7 +37,7 @@
         position: absolute;
         left: 0px;
         right: 0px;
-        bottom: -2rem;
+        bottom: -25px;
         height: 2px;
         opacity: 0.06;
         background: linear-gradient(to right, black, #b8b8b8);
@@ -62,6 +62,35 @@
 
     &__button-text {
       font-size: 14px;
+    }
+
+    @include to640 {
+      &__item {
+        max-width: 200px;
+      }
+    }
+    @include to480 {
+      &__content {
+        flex-direction: column;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      &__button {
+        margin: 5px 0 0 0;
+      }
+
+      &__item {
+        max-width: 300px;
+
+        &-second {
+          margin-bottom: 40px;
+        }
+      }
+
+      &__text {
+        text-align: left;
+      }
     }
   }
   

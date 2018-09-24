@@ -1,6 +1,6 @@
 .container {
   height: 100%;
-  width: $container-width;
+  max-width: $container-width;
   overflow: hidden;
   box-sizing: border-box;
   margin: 0 auto;
