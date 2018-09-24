@@ -17,12 +17,10 @@
     "gulp-postcss": "8.0.0",
     "gulp-rename": "1.4.0",
     "gulp-sass": "4.0.1",
-    "node-sass": "4.9.3"
-  },
-  "dependencies": {
-    "husky": "^1.0.0-rc.14",
+    "husky": "^1.0.0-rc.15",
     "js-beautify": "^1.8.6",
-    "lint-staged": "^7.3.0"
+    "lint-staged": "^7.3.0",
+    "node-sass": "4.9.3"
   },
   "husky": {
     "hooks": {
@@ -33,6 +31,10 @@
     "*.{js,json,css,md}": [
       "prettier --write",
       "git add"
+    ],
+    "*.html": [
+      "js-beautify -r",
+      "git  add"
     ]
   }
 }

@@ -1,5 +1,18 @@
 .button {
-    font: normal $light-weight 14px "Roboto", PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
-    border: 0 none;
-    color: white;
+  font: normal $light-weight 14px "Roboto", PTSans-Regular, AdobeInvisFont,
+    MyriadPro-Regular;
+  border: 0 none;
+  color: white;
+  &:hover {
+    background-color: darken($color-5, 20%);
   }
+  &_gray {
+    background-color: #d2d5da;
+    &:hover {
+      background-color: darken(#d2d5da, 20%);
+    }
+  }
+  &:active {
+    border: none;
+  }
+}

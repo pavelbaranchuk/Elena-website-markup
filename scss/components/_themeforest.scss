@@ -35,24 +35,23 @@
   }
 
   &__button {
-    font: normal $medium-weight 18px 'Roboto', $basic-font-stack;
+    font: normal $medium-weight 18px "Roboto", $basic-font-stack;
     border: 0 none;
     color: white;
     border-radius: 20px;
     padding: 10px 10px;
     margin: 10px 0 60px 0;
-    background: $color-7;
- }
+  }
 
   &__image {
     -webkit-clip-path: inset(123px 211px 2px 22px);
-    clip-path: inset(123px 211px 2px 22px);  
+    clip-path: inset(123px 211px 2px 22px);
     margin-top: -120px;
   }
 
   &__text {
     margin-bottom: 20px;
-    color: $color-6; 
+    color: $color-6;
   }
 
   &__button-text {
@@ -67,9 +66,9 @@
 
     &__image-container {
       max-width: 320px;
-      margin-top: 40px
+      margin-top: 40px;
     }
-    
+
     &__heading {
       margin: 40px 0 45px;
     }

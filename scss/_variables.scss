@@ -9,21 +9,21 @@ $color-5: #50c3af;
 $color-6: #787b80;
 $color-7: #d2d5da;
 
-
 $medium-weight: 500;
 $black-weight: 900;
 $light-weight: 300;
 
 $basic-font-stack: PTSans-Regular, AdobeInvisFont, MyriadPro-Regular;
-$heading-font-stack: PTSans-Bold, AdobeInvisFont, MyriadPro-Regular, $basic-font-stack;
+$heading-font-stack: PTSans-Bold, AdobeInvisFont, MyriadPro-Regular,
+  $basic-font-stack;
 
 @mixin to640 {
-    @media only screen and (max-width: 768px + 17px) {
-      @content;
-    }
+  @media only screen and (max-width: 768px + 17px) {
+    @content;
   }
-  @mixin to480 {
-    @media only screen and (max-width: 480px + 17px) {
-      @content;
-    }
+}
+@mixin to480 {
+  @media only screen and (max-width: 480px + 17px) {
+    @content;
   }
+}

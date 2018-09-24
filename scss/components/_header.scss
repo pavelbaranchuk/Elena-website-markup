@@ -1,5 +1,5 @@
 .header {
-  background: url('../img/Major-screen.png') center/cover no-repeat;
+  background: url("../img/Major-screen.png") center/cover no-repeat;
   text-align: center;
   color: $color-2;
 
@@ -18,7 +18,7 @@
     max-width: 615px;
     margin: 0 auto 62px;
     line-height: 24px;
-    letter-spacing: .01em;
+    letter-spacing: 0.01em;
 
     &:before,
     &:after {
@@ -42,7 +42,7 @@
     color: $color-2;
     margin: -20px 0 28px 0;
     font-size: 50px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: "Ubuntu", sans-serif;
   }
 
   &__name {
@@ -59,11 +59,14 @@
     border: 0 none;
     color: $color-2;
     font-family: $heading-font-stack;
+    &:hover {
+      background-color: darken($color-5, 20%);
+    }
   }
 
   &__link {
     color: $color-2;
-    font: normal normal 15px 'OpenSans-Semibold', $basic-font-stack;
+    font: normal normal 15px "OpenSans-Semibold", $basic-font-stack;
     text-decoration: none;
   }
 
@@ -89,7 +92,7 @@
       border-radius: 30px;
       padding: 15px 30px;
       margin: 0 0 40px 0;
-      font-size: 15px;
+      font-size: $heading-font-stack;
     }
 
     &__menu {

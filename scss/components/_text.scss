@@ -1,8 +1,8 @@
 .text {
-  font: normal normal 14px 'Roboto', $basic-font-stack;
+  font: normal normal 14px "Roboto", $basic-font-stack;
   color: $color-3;
   line-height: 24px;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
 
   @media only screen and (max-width: 768px) {
     font-size: 12px;

@@ -1,6 +1,6 @@
 .footer {
   &__content {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -27,7 +27,6 @@
   }
 
   @include to640 {
-    
   }
   @include to480 {
     &__item {
