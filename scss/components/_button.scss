@@ -1,6 +1,5 @@
 .button {
-  font: normal $light-weight 14px "Roboto", PTSans-Regular, AdobeInvisFont,
-    MyriadPro-Regular;
+  font: normal $light-weight 14px $basic-font-stack;
   border: 0 none;
   color: white;
   &:hover {

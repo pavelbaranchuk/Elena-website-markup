@@ -14,14 +14,11 @@
   }
 
   &__link {
-    opacity: 0.5;
     text-decoration-line: none;
+    color: $color-6;
     &:hover {
       text-decoration: underline;
-      color: darken($color-6, 20%);
-    }
-    &:visited {
-      color: darken($color-6, 20%);
+      color: darken($color-6, 40%);
     }
   }
 
@@ -36,6 +33,9 @@
   &__icon {
     margin: 0 5px 0 5px;
     color: $color-6;
+    &:hover {
+      color: darken($color-6, 40%);
+    }
   }
 
   @include to640 {
