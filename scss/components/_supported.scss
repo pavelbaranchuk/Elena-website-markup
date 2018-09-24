@@ -1,5 +1,5 @@
 .supported {
-  background: $color-1;
+  background: $section-color;
 
   &__icon {
     opacity: 0.15;
@@ -24,7 +24,7 @@
 
   &__heading {
     position: relative;
-    color: $color-4;
+    color: $light-black;
     font-size: 12pt;
     text-transform: uppercase;
     margin: 40px 0 50px;
@@ -50,7 +50,7 @@
 
   &__text {
     margin-bottom: 20px;
-    color: $color-6;
+    color: $link-coolor;
     font-family: $basic-font-stack;
   }
 
@@ -62,7 +62,7 @@
     font-size: 14px;
   }
 
-  @include to640 {
+  @include large-break-point {
     &__content {
       max-width: 460px;
       padding: 0;
@@ -72,7 +72,7 @@
       margin: 5px 0 40px 0;
     }
   }
-  @include to480 {
+  @include small-break-point {
     &__content {
       max-width: 300px;
       text-align: center;

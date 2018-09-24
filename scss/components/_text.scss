@@ -1,14 +1,10 @@
 .text {
   font: normal normal 14px $basic-font-stack;
-  color: $color-3;
+  color: $black-title;
   line-height: 24px;
   letter-spacing: 0.01em;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 12px;
-  }
-
-  @include to640 {
+  @include large-break-point {
     font-size: 12px;
   }
 }

@@ -1,5 +1,5 @@
 .actions {
-  background: $color-1;
+  background: $section-color;
 
   &__item {
     display: inline-block;
@@ -19,7 +19,7 @@
   }
 
   &__button {
-    background: $color-5;
+    background: $main-color;
     border-radius: 20px;
     padding: 10px 10px;
     margin: 10px 0 60px 0;
@@ -27,7 +27,7 @@
 
   &__heading {
     position: relative;
-    color: $color-4;
+    color: $light-black;
     font-size: 12pt;
     text-transform: uppercase;
     margin: 40px 0 50px;
@@ -57,19 +57,19 @@
 
   &__text {
     margin-bottom: 20px;
-    color: $color-6;
+    color: $link-coolor;
   }
 
   &__button-text {
     font-size: 14px;
   }
 
-  @include to640 {
+  @include large-break-point {
     &__item {
       max-width: 200px;
     }
   }
-  @include to480 {
+  @include small-break-point {
     &__content {
       flex-direction: column;
       margin-bottom: 40px;

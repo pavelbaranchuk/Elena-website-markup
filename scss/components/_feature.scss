@@ -12,26 +12,26 @@
   }
 
   &__button {
-    background: $color-5;
+    background: $main-color;
     border-radius: 20px;
     padding: 10px 10px;
     margin: 10px 0 100px 0;
   }
 
   &__link {
-    color: $color-5;
+    color: $main-color;
     display: inline-block;
     text-decoration-line: none;
     margin-bottom: 40px;
     &:hover {
       text-decoration: underline;
-      color: darken($color-5, 20%);
+      color: darken($main-color, 20%);
     }
   }
 
   &__heading {
     position: relative;
-    color: $color-4;
+    color: $light-black;
     font-size: 16px;
     text-transform: uppercase;
     margin: 40px 0 50px;
@@ -44,7 +44,7 @@
       bottom: -25px;
       height: 2px;
       opacity: 0.06;
-      background: $color-3;
+      background: $black-title;
     }
   }
 
@@ -61,10 +61,10 @@
 
   &__text {
     margin-bottom: 20px;
-    color: $color-6;
+    color: $link-coolor;
   }
 
-  @include to640 {
+  @include large-break-point {
     &__heading {
       font-size: 12px;
     }
@@ -79,7 +79,7 @@
       padding: 0;
     }
   }
-  @include to480 {
+  @include small-break-point {
     &__content {
       flex-direction: column;
       margin-top: 40px;

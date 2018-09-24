@@ -15,10 +15,10 @@
 
   &__link {
     text-decoration-line: none;
-    color: $color-6;
+    color: $link-coolor;
     &:hover {
       text-decoration: underline;
-      color: darken($color-6, 40%);
+      color: darken($link-coolor, 40%);
     }
   }
 
@@ -26,21 +26,19 @@
     margin: 20px;
     font-family: $basic-font-stack;
     font-weight: normal;
-    color: $color-6;
+    color: $link-coolor;
     font-size: 15px;
   }
 
   &__icon {
     margin: 0 5px 0 5px;
-    color: $color-6;
+    color: $link-coolor;
     &:hover {
-      color: darken($color-6, 40%);
+      color: darken($link-coolor, 40%);
     }
   }
 
-  @include to640 {
-  }
-  @include to480 {
+  @include small-break-point {
     &__item {
       font-size: 12px;
     }

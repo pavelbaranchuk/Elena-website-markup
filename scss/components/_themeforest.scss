@@ -1,5 +1,5 @@
 .themeforest {
-  background: $color-2;
+  background: $white-title;
 
   &__content {
     display: flex;
@@ -44,21 +44,20 @@
   }
 
   &__image {
-    -webkit-clip-path: inset(123px 211px 2px 22px);
     clip-path: inset(123px 211px 2px 22px);
     margin-top: -120px;
   }
 
   &__text {
     margin-bottom: 20px;
-    color: $color-6;
+    color: $link-coolor;
   }
 
   &__button-text {
     font-size: 14px;
   }
 
-  @include to640 {
+  @include large-break-point {
     &__content {
       flex-direction: column;
       text-align: center;

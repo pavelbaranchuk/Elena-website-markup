@@ -11,7 +11,7 @@
   }
 
   &__button {
-    background: $color-5;
+    background: $main-color;
     border-radius: 20px;
     padding: 10px 10px;
     margin: 10px 0 60px 0;
@@ -53,7 +53,7 @@
     font-size: 14px;
   }
 
-  @include to640 {
+  @include large-break-point {
     &__image {
       max-width: 220px;
       margin-top: 40px;
@@ -81,7 +81,7 @@
     }
   }
 
-  @include to480 {
+  @include small-break-point {
     &__content {
       flex-direction: column;
     }
