@@ -1,6 +1,6 @@
 # Elena-website-markup
 
-Markup test task
+Played with HTML/CSS
 
 ## Install dependencies
 
