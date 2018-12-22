@@ -1,0 +1,111 @@
+.templates {
+  &__item {
+    display: inline-block;
+    max-width: 267px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__button {
+    background: $main-color;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: 10px 0 60px 0;
+  }
+
+  &__heading {
+    position: relative;
+    color: #384048;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 40px 0 50px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: -25px;
+      height: 2px;
+      opacity: 0.06;
+      background: linear-gradient(to right, black, #b8b8b8);
+    }
+  }
+
+  &__image {
+    align-content: center;
+    text-align: center;
+    min-height: 45px;
+    margin-top: 80px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: #787b80;
+    font-family: $basic-font-stack;
+  }
+
+  &__button-text {
+    font-size: 14px;
+  }
+
+  @include large-break-point {
+    &__image {
+      max-width: 220px;
+      margin-top: 40px;
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__heading {
+      font-size: 13px;
+
+      &:after {
+        left: 20px;
+        right: 20px;
+      }
+    }
+
+    &__text {
+      padding: 0 10px 0 10px;
+    }
+
+    &__button {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  @include small-break-point {
+    &__content {
+      flex-direction: column;
+    }
+
+    &__image {
+      margin-top: 0;
+      max-width: 267px;
+    }
+
+    &__content {
+      margin-top: 40px;
+    }
+
+    &__heading {
+      font-size: 15px;
+
+      &:after {
+        left: 0;
+        right: 0;
+      }
+    }
+
+    &__text {
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.supported {
+  background: $section-color;
+
+  &__icon {
+    opacity: 0.15;
+    font-size: 25px;
+    padding: 0 20px 0 0;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px 0 40px;
+  }
+
+  &__button {
+    font: normal $medium-weight 18px $basic-font-stack;
+    border: 0 none;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin: 10px 0 60px 0;
+  }
+
+  &__heading {
+    position: relative;
+    color: $light-black;
+    font-size: 12pt;
+    text-transform: uppercase;
+    margin: 40px 0 50px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -25px;
+      height: 2px;
+      opacity: 0.06;
+      background: linear-gradient(to right, black, #b8b8b8);
+    }
+  }
+
+  &__image {
+    align-content: center;
+    text-align: center;
+    min-height: 45px;
+    margin-top: 80px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    color: $link-coolor;
+    font-family: $basic-font-stack;
+  }
+
+  &__article-heading {
+    align-items: center;
+  }
+
+  &__button-text {
+    font-size: 14px;
+  }
+
+  @include large-break-point {
+    &__content {
+      max-width: 460px;
+      padding: 0;
+    }
+
+    &__button {
+      margin: 5px 0 40px 0;
+    }
+  }
+  @include small-break-point {
+    &__content {
+      max-width: 300px;
+      text-align: center;
+    }
+
+    &__text {
+      text-align: left;
+    }
+  }
+}

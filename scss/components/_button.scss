@@ -1,0 +1,17 @@
+.button {
+  font: normal $light-weight 14px $basic-font-stack;
+  border: 0 none;
+  color: white;
+  &:hover {
+    background-color: darken($main-color, 20%);
+  }
+  &_gray {
+    background-color: $button2;
+    &:hover {
+      background-color: darken($button2, 20%);
+    }
+  }
+  &:active {
+    border: none;
+  }
+}
