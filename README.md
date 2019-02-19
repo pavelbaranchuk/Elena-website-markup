@@ -1,7 +1,5 @@
 # Elena-website-markup
 
-Played with HTML/CSS
-
 ## Install dependencies
 
 ```
